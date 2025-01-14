@@ -29,7 +29,7 @@ const Landing = () => {
         >
           <h1 style={{ fontSize: '48px', fontWeight: 'bold' }}>EventEase</h1>
           <p style={{ fontSize: '18px', maxWidth: '600px' }}>
-            Simplify event planning with streamlined staff and auditorium management.
+            Simplify event planning with streamlined staff management.
           </p>
           <div className="d-flex gap-3">
   <Link to="/staff">
@@ -91,7 +91,7 @@ const Landing = () => {
         width: '300px',
         borderRadius: '10px',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-        backgroundColor: '#4CAF50',
+        backgroundColor: '#2e7d32', // Darker green
         color: 'white',
         display: 'flex',
         flexDirection: 'column',
@@ -111,7 +111,7 @@ const Landing = () => {
         width: '300px',
         borderRadius: '10px',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-        backgroundColor: '#ff9800',
+        backgroundColor: '#f57c00', // Darker orange
         color: 'white',
         display: 'flex',
         flexDirection: 'column',
@@ -131,7 +131,7 @@ const Landing = () => {
         width: '300px',
         borderRadius: '10px',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-        backgroundColor: '#f44336',
+        backgroundColor: '#d32f2f', // Darker red
         color: 'white',
         display: 'flex',
         flexDirection: 'column',
