@@ -37,22 +37,22 @@ const Landing = () => {
       style={{
         marginTop: '20px',
         padding: '12px 30px',
-        width: '160px', // Ensures both buttons have the same width
+        width: '160px', 
         fontSize: '18px',
         fontWeight: 'bold',
         borderRadius: '50px',
-        border: '2px solid white', // Border color set to white
-        backgroundColor: 'rgba(255, 255, 255, 0.2)', // Semi-transparent white for blur effect
-        color: 'white', // Text color set to white
+        border: '2px solid white',
+        backgroundColor: 'rgba(255, 255, 255, 0.2)', 
+        color: 'white', 
         cursor: 'pointer',
-        boxShadow: '0 8px 15px rgba(0, 0, 0, 0.2)', // Adds shadow
-        backdropFilter: 'blur(10px)', // Blurs the button background
+        boxShadow: '0 8px 15px rgba(0, 0, 0, 0.2)', 
+        backdropFilter: 'blur(10px)', 
         transition: 'all 0.3s ease',
       }}
       onMouseOver={(e) => {
         e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
         e.target.style.transform = 'scale(1.05)';
-        e.target.style.boxShadow = '0 12px 20px rgba(0, 0, 0, 0.3)'; // Enhanced shadow on hover
+        e.target.style.boxShadow = '0 12px 20px rgba(0, 0, 0, 0.3)'; 
       }}
       onMouseOut={(e) => {
         e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
@@ -60,173 +60,93 @@ const Landing = () => {
         e.target.style.boxShadow = '0 8px 15px rgba(0, 0, 0, 0.2)';
       }}
     >
-      Staff
+      Get Start
     </button>
   </Link>
 
-  <Link to="/auditorium">
-    <button
+  
+   </div>
+      </div>
+      </div>
+
+      <div style={{ padding: '40px', textAlign: 'center', backgroundColor: 'black' }}>
+  <h2 style={{ fontSize: '36px', marginBottom: '20px', color: '#ffffff' }}>
+    Staff Management Features
+  </h2>
+  <p style={{ fontSize: '18px', color: '#ddd', marginBottom: '40px' }}>
+    Efficiently manage your staff details for events. Add, update, and delete staff data with ease.
+  </p>
+  <div
+    style={{
+      marginTop: '30px',
+      display: 'flex',
+      justifyContent: 'center',
+      gap: '140px',
+      flexWrap: 'wrap',
+    }}
+  >
+    {/* Card 1: Staff Details Add */}
+    <div
       style={{
-        marginTop: '20px',
-        padding: '12px 30px',
-        width: '160px', // Ensures both buttons have the same width
-        fontSize: '18px',
-        fontWeight: 'bold',
-        borderRadius: '50px',
-        border: '2px solid white', // Border color set to white
-        backgroundColor: 'rgba(255, 255, 255, 0.2)', // Semi-transparent white for blur effect
-        color: 'white', // Text color set to white
-        cursor: 'pointer',
-        boxShadow: '0 8px 15px rgba(0, 0, 0, 0.2)', // Adds shadow
-        backdropFilter: 'blur(10px)', // Blurs the button background
-        transition: 'all 0.3s ease',
-      }}
-      onMouseOver={(e) => {
-        e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
-        e.target.style.transform = 'scale(1.05)';
-        e.target.style.boxShadow = '0 12px 20px rgba(0, 0, 0, 0.3)'; // Enhanced shadow on hover
-      }}
-      onMouseOut={(e) => {
-        e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
-        e.target.style.transform = 'scale(1)';
-        e.target.style.boxShadow = '0 8px 15px rgba(0, 0, 0, 0.2)';
+        width: '300px',
+        borderRadius: '10px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+        backgroundColor: '#4CAF50',
+        color: 'white',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'center',
+        padding: '20px',
       }}
     >
-      Auditorium
-    </button>
-  </Link>
+      <h3 style={{ fontSize: '24px', margin: '10px 0' }}>Add Staff Details</h3>
+      <p>Efficiently add new staff details for your events.</p>
+    </div>
+
+    {/* Card 2: Staff Details Update */}
+    <div
+      style={{
+        width: '300px',
+        borderRadius: '10px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+        backgroundColor: '#ff9800',
+        color: 'white',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'center',
+        padding: '20px',
+      }}
+    >
+      <h3 style={{ fontSize: '24px', margin: '10px 0' }}>Update Staff Details</h3>
+      <p>Quickly update existing staff information for your events.</p>
+    </div>
+
+    {/* Card 3: Staff Details Delete */}
+    <div
+      style={{
+        width: '300px',
+        borderRadius: '10px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+        backgroundColor: '#f44336',
+        color: 'white',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'center',
+        padding: '20px',
+      }}
+    >
+      <h3 style={{ fontSize: '24px', margin: '10px 0' }}>Delete Staff Details</h3>
+      <p>Remove staff details when no longer needed for your events.</p>
+    </div>
+  </div>
 </div>
 
-
-
-
-
-        </div>
-      </div>
-
-            <div style={{ padding: '40px', textAlign: 'center', backgroundColor: 'black' }}>
-        <h2 style={{ fontSize: '36px', marginBottom: '20px', color: '#ffffff' }}>Features</h2>
-        <div
-          style={{
-            marginTop: '30px',
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '140px',
-            flexWrap: 'wrap',
-          }}
-        >
-          {/* Card 1 */}
-          <div
-            style={{
-              width: '300px',
-              borderRadius: '10px',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-              backgroundColor: 'white',
-              overflow: 'hidden',
-              position: 'relative',
-            }}
-          >
-            <img
-              src="https://i.pinimg.com/originals/dd/52/4a/dd524a2a08b5ca9fb9fc89d985e629b3.jpg"
-              alt="Staff Management Icon"
-              style={{ width: '100%', height: 'auto', display: 'block' }}
-            />
-            <div
-              style={{
-                position: 'absolute',
-                top: '0',
-                left: '0',
-                width: '100%',
-                height: '100%',
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                color: 'white',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                textAlign: 'center',
-              }}
-            >
-              <h3 style={{ fontSize: '24px', margin: '10px 0' }}>Staff Management</h3>
-              <p>Keep track of your event staff effortlessly.</p>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div
-            style={{
-              width: '300px',
-              borderRadius: '10px',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-              backgroundColor: 'white',
-              overflow: 'hidden',
-              position: 'relative',
-            }}
-          >
-            <img
-              src="https://i2.wp.com/visit-twincities.com/wp-content/uploads/2016/08/0511_Meet004.jpg?fit=1500%2C998"
-              alt="Auditorium Management Icon"
-              style={{ width: '100%', height: 'auto', display: 'block' }}
-            />
-            <div
-              style={{
-                position: 'absolute',
-                top: '0',
-                left: '0',
-                width: '100%',
-                height: '100%',
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                color: 'white',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                textAlign: 'center',
-              }}
-            >
-              <h3 style={{ fontSize: '24px', margin: '10px 0' }}>Auditorium Management</h3>
-              <p>Manage auditorium availability for your events.</p>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div
-            style={{
-              width: '300px',
-              borderRadius: '10px',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-              backgroundColor: 'white',
-              overflow: 'hidden',
-              position: 'relative',
-            }}
-          >
-            <img
-              src="https://www.baliweddingprices.com/wp-content/uploads/2023/04/stress-free-wedding-celebration.jpg"
-              alt="Streamlined Operations Icon"
-              style={{ width: '100%', height: 'auto', display: 'block' }}
-            />
-            <div
-              style={{
-                position: 'absolute',
-                top: '0',
-                left: '0',
-                width: '100%',
-                height: '100%',
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                color: 'white',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                textAlign: 'center',
-              }}
-            >
-              <h3 style={{ fontSize: '24px', margin: '10px 0' }}>Streamlined Operations</h3>
-              <p>All your event management needs in one place.</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
 

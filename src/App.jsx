@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Landing from './pages/Landing';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import AuditoriumAdd from './pages/Auditorium';
 
 
 
@@ -22,7 +21,7 @@ function App() {
      <Routes>
       <Route path='/' element={<Landing/>}></Route>
       <Route path='/staff' element={<Staff/>}></Route>
-      <Route path='/auditorium' element={<AuditoriumAdd/>}></Route>
+      
 
      </Routes>
      <Footer/>
